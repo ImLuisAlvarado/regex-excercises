@@ -7,6 +7,7 @@ import { isValidPassword } from './modules/strongPasswordValidation';
 import { isValidUsername } from './modules/userNameValidation';
 import { isValidName } from './modules/nameValidation';
 import { isValidDate } from './modules/dateValidation';
+import { isValidHour } from './modules/hourValidation';
 
 //Validación de email
 console.log(`Este email retornó: ${isValidEmail('juan.perez@empresa.com.mx')}`);
@@ -43,3 +44,7 @@ console.log(`Este nombre retornó: ${isValidName('123Luis')}`);
 //Validación de fecha
 console.log(`Esta fecha retornó: ${isValidDate('31/12/2023')}`);
 console.log(`Esta fecha retornó: ${isValidDate('31-12-2023')}`);
+
+//Validación de the houurs
+console.log(`Esta hora retornó: ${isValidHour('23:59')}`);
+console.log(`Esta hora retornó: ${isValidHour('24:00')}`);
