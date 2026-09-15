@@ -8,6 +8,7 @@ import { isValidUsername } from './modules/userNameValidation';
 import { isValidName } from './modules/nameValidation';
 import { isValidDate } from './modules/dateValidation';
 import { isValidHour } from './modules/hourValidation';
+import { isValidCard } from './modules/cardValidations';
 
 //Validación de email
 console.log(`Este email retornó: ${isValidEmail('juan.perez@empresa.com.mx')}`);
@@ -48,3 +49,7 @@ console.log(`Esta fecha retornó: ${isValidDate('31-12-2023')}`);
 //Validación de the houurs
 console.log(`Esta hora retornó: ${isValidHour('23:59')}`);
 console.log(`Esta hora retornó: ${isValidHour('24:00')}`);
+
+//Validación de tarjeta
+console.log(`Esta tarjeta retornó: ${isValidCard('1234567890123456')}`);
+console.log(`Esta tarjeta retornó: ${isValidCard('1234 5678 9012 3456')}`);
